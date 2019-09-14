@@ -58,8 +58,8 @@ hi Error            cterm=bold      ctermfg=210         ctermbg=NONE
 hi ErrorMsg         cterm=NONE      ctermfg=210         ctermbg=NONE
 hi CocErrorSign     cterm=NONE      ctermfg=210         ctermbg=NONE
 
-hi WarningMsg       cterm=NONE      ctermfg=229         ctermbg=NONE
-hi CocWarningSign   cterm=NONE      ctermfg=229         ctermbg=NONE
+hi WarningMsg       cterm=NONE      ctermfg=186         ctermbg=NONE
+hi CocWarningSign   cterm=NONE      ctermfg=186         ctermbg=NONE
 
 hi InfoMsg          cterm=NONE      ctermfg=66          ctermbg=NONE
 hi MoreMsg          cterm=NONE      ctermfg=66          ctermbg=NONE
