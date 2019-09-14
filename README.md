@@ -1,4 +1,3 @@
-# vim-moonscape
-A simple color scheme for vim CLI mode inspired inspired by [xero harrison's blaquemagick scheme](https://github.com/xero/blaquemagick.vim).
+# vim-mrngsht
+A simple color scheme for vim CLI mode inspired inspired by Drogglbecher/vim-moonscape.
 
-<img src="./.github/moonscape_vim.png">
