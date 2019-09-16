@@ -39,8 +39,9 @@ hi TypeDef          cterm=NONE      ctermfg=66          ctermbg=NONE
 hi PreProc          cterm=NONE      ctermfg=66          ctermbg=NONE
 hi Special          cterm=NONE      ctermfg=66          ctermbg=NONE
 hi SpecialKey       cterm=NONE      ctermfg=66          ctermbg=NONE
-hi Title            cterm=NONE      ctermfg=66          ctermbg=NONE
-hi htmlH1           cterm=NONE      ctermfg=66          ctermbg=NONE
+
+hi Title            cterm=bold      ctermfg=66          ctermbg=NONE
+hi htmlH1           cterm=bold      ctermfg=66          ctermbg=NONE
 
 hi ColorColumn      cterm=NONE      ctermfg=NONE        ctermbg=235
 hi CursorLine       cterm=bold      ctermfg=NONE        ctermbg=NONE
