@@ -30,6 +30,7 @@ hi Statement        cterm=NONE      ctermfg=247         ctermbg=NONE
 hi SpellCap         cterm=NONE      ctermfg=247         ctermbg=NONE
 hi Type             cterm=NONE      ctermfg=247         ctermbg=NONE
 
+hi SpecialComment   cterm=NONE      ctermfg=242         ctermbg=NONE
 hi Comment          cterm=NONE      ctermfg=242         ctermbg=NONE
 hi Cursor           cterm=NONE      ctermfg=242         ctermbg=NONE
 hi NonText          cterm=NONE      ctermfg=242         ctermbg=NONE
