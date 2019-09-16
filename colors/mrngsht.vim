@@ -13,14 +13,14 @@ hi Constant         cterm=italic    ctermfg=244         ctermbg=NONE
 hi String           cterm=italic    ctermfg=244         ctermbg=NONE
 hi Tag              cterm=italic    ctermfg=244         ctermbg=NONE
 
-hi Conditional      cterm=bold      ctermfg=247         ctermbg=NONE
-hi Repeat           cterm=bold      ctermfg=247         ctermbg=NONE
-hi Label            cterm=bold      ctermfg=247         ctermbg=NONE
 hi Operator         cterm=bold      ctermfg=247         ctermbg=NONE
 hi Keyword          cterm=bold      ctermfg=247         ctermbg=NONE
 hi Exception        cterm=bold      ctermfg=247         ctermbg=NONE
 hi Delimiter        cterm=bold      ctermfg=247          ctermbg=NONE
 
+hi Conditional      cterm=NONE      ctermfg=247         ctermbg=NONE
+hi Repeat           cterm=NONE      ctermfg=247         ctermbg=NONE
+hi Label            cterm=NONE      ctermfg=247         ctermbg=NONE
 hi Define           cterm=NONE      ctermfg=247          ctermbg=NONE
 hi Identifier       cterm=NONE      ctermfg=247         ctermbg=NONE
 hi Include          cterm=NONE      ctermfg=247          ctermbg=NONE
