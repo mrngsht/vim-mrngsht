@@ -89,9 +89,10 @@ hi Search           cterm=NONE      ctermfg=234         ctermbg=66
 hi SpellBad         cterm=NONE      ctermfg=203         ctermbg=NONE
 hi SpellLocal       cterm=NONE      ctermfg=229         ctermbg=NONE
 hi SpellRare        cterm=NONE      ctermfg=245         ctermbg=NONE
-hi Todo             cterm=NONE      ctermfg=234         ctermbg=66
 hi Underlined       cterm=underline ctermfg=NONE        ctermbg=NONE
 hi Visual           cterm=NONE      ctermfg=249         ctermbg=239
+
+hi Todo             cterm=italic    ctermfg=251         ctermbg=NONE
 
 hi CocHighlightText cterm=NONE      ctermfg=247         ctermbg=238
 hi NERDTreeExecFile cterm=NONE      ctermfg=247         ctermbg=NONE
