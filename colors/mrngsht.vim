@@ -7,42 +7,50 @@ endif
 
 let g:colors_name="mrngsht"
 
-hi Boolean          cterm=italic    ctermfg=244         ctermbg=NONE
-hi Character        cterm=italic    ctermfg=244         ctermbg=NONE
-hi Constant         cterm=italic    ctermfg=244         ctermbg=NONE
-hi String           cterm=italic    ctermfg=244         ctermbg=NONE
-hi Tag              cterm=italic    ctermfg=244         ctermbg=NONE
+let s:literal=' cterm=italic ctermfg=244 ctermbg=NONE'
+let s:keyword=' cterm=bold ctermfg=247 ctermbg=NONE'
+let s:normal=' cterm=NONE ctermfg=247 ctermbg=NONE'
+let s:dim=' cterm=NONE ctermfg=242 ctermbg=NONE'
+let s:greenNormal=' cterm=NONE ctermfg=66 ctermbg=NONE'
+let s:greenBold=' cterm=NONE ctermfg=66 ctermbg=NONE'
 
-hi Operator         cterm=bold      ctermfg=247         ctermbg=NONE
-hi Keyword          cterm=bold      ctermfg=247         ctermbg=NONE
-hi Exception        cterm=bold      ctermfg=247         ctermbg=NONE
-hi Delimiter        cterm=bold      ctermfg=247          ctermbg=NONE
 
-hi Conditional      cterm=NONE      ctermfg=247         ctermbg=NONE
-hi Repeat           cterm=NONE      ctermfg=247         ctermbg=NONE
-hi Label            cterm=NONE      ctermfg=247         ctermbg=NONE
-hi Define           cterm=NONE      ctermfg=247          ctermbg=NONE
-hi Identifier       cterm=NONE      ctermfg=247         ctermbg=NONE
-hi Include          cterm=NONE      ctermfg=247          ctermbg=NONE
-hi Normal           cterm=NONE      ctermfg=247         ctermbg=NONE
-hi Operator         cterm=NONE      ctermfg=247         ctermbg=NONE
-hi Statement        cterm=NONE      ctermfg=247         ctermbg=NONE
-hi SpellCap         cterm=NONE      ctermfg=247         ctermbg=NONE
-hi Type             cterm=NONE      ctermfg=247         ctermbg=NONE
+execute 'hi Boolean' . s:literal
+execute 'hi Character' . s:literal
+execute 'hi Constant' . s:literal
+execute 'hi String' . s:literal
+execute 'hi Tag' . s:literal
 
-hi SpecialComment   cterm=NONE      ctermfg=242         ctermbg=NONE
-hi Comment          cterm=NONE      ctermfg=242         ctermbg=NONE
-hi Cursor           cterm=NONE      ctermfg=242         ctermbg=NONE
-hi NonText          cterm=NONE      ctermfg=242         ctermbg=NONE
+execute 'hi Operator' . s:keyword
+execute 'hi Keyword' . s:keyword
+execute 'hi Exception' . s:keyword
+execute 'hi Delimiter' . s:keyword
 
-hi Function         cterm=NONE      ctermfg=66         ctermbg=NONE
-hi TypeDef          cterm=NONE      ctermfg=66          ctermbg=NONE
-hi PreProc          cterm=NONE      ctermfg=66          ctermbg=NONE
-hi Special          cterm=NONE      ctermfg=66          ctermbg=NONE
-hi SpecialKey       cterm=NONE      ctermfg=66          ctermbg=NONE
+execute 'hi Conditional' . s:normal
+execute 'hi Repeat' . s:normal
+execute 'hi Label' . s:normal
+execute 'hi Define' . s:normal
+execute 'hi Identifier' . s:normal
+execute 'hi Include' . s:normal
+execute 'hi Normal' . s:normal
+execute 'hi Operator' . s:normal
+execute 'hi Statement' . s:normal
+execute 'hi SpellCap' . s:normal
+execute 'hi Type' . s:normal
 
-hi Title            cterm=bold      ctermfg=66          ctermbg=NONE
-hi htmlH1           cterm=bold      ctermfg=66          ctermbg=NONE
+execute 'hi SpecialComment' . s:dim
+execute 'hi Comment' . s:dim
+execute 'hi Cursor' . s:dim
+execute 'hi NonText' . s:dim
+
+execute 'hi Function' . s:greenNormal
+execute 'hi TypeDef' . s:greenNormal
+execute 'hi PreProc' . s:greenNormal
+execute 'hi Special' . s:greenNormal
+execute 'hi SpecialKey' . s:greenNormal
+
+execute 'hi Title' . s:greenBold
+execute 'hi htmlH1' . s:greenBold
 
 hi ColorColumn      cterm=NONE      ctermfg=NONE        ctermbg=235
 hi CursorLine       cterm=bold      ctermfg=NONE        ctermbg=NONE
