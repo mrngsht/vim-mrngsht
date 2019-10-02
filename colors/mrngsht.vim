@@ -7,13 +7,23 @@ endif
 
 let g:colors_name="mrngsht"
 
-let s:literal=' cterm=italic ctermfg=244 ctermbg=NONE'
-let s:keyword=' cterm=bold ctermfg=247 ctermbg=NONE'
-let s:normal=' cterm=NONE ctermfg=247 ctermbg=NONE'
-let s:dim=' cterm=NONE ctermfg=242 ctermbg=NONE'
-let s:greenNormal=' cterm=NONE ctermfg=66 ctermbg=NONE'
-let s:greenBold=' cterm=NONE ctermfg=66 ctermbg=NONE'
+let s:trait_color=66
 
+let s:strong_color=251
+let s:normal_color=247
+let s:dim1_color=244
+let s:dim2_color=243
+let s:dim3_color=242
+
+let s:error_color=210
+let s:warning_color=186
+
+let s:literal=' cterm=italic ctermfg=' . s:dim1_color . ' ctermbg=NONE'
+let s:keyword=' cterm=bold ctermfg=' . s:normal_color . ' ctermbg=NONE'
+let s:normal=' cterm=NONE ctermfg=' . s:normal_color . ' ctermbg=NONE'
+let s:dim=' cterm=NONE ctermfg=' . s:dim3_color . ' ctermbg=NONE'
+let s:highlightNormal=' cterm=NONE ctermfg=' . s:trait_color . ' ctermbg=NONE'
+let s:highlightBold=' cterm=NONE ctermfg=' . s:trait_color . ' ctermbg=NONE'
 
 execute 'hi Boolean' . s:literal
 execute 'hi Character' . s:literal
@@ -43,14 +53,14 @@ execute 'hi Comment' . s:dim
 execute 'hi Cursor' . s:dim
 execute 'hi NonText' . s:dim
 
-execute 'hi Function' . s:greenNormal
-execute 'hi TypeDef' . s:greenNormal
-execute 'hi PreProc' . s:greenNormal
-execute 'hi Special' . s:greenNormal
-execute 'hi SpecialKey' . s:greenNormal
+execute 'hi Function' . s:highlightNormal
+execute 'hi TypeDef' . s:highlightNormal
+execute 'hi PreProc' . s:highlightNormal
+execute 'hi Special' . s:highlightNormal
+execute 'hi SpecialKey' . s:highlightNormal
 
-execute 'hi Title' . s:greenBold
-execute 'hi htmlH1' . s:greenBold
+execute 'hi Title' . s:highlightBold
+execute 'hi htmlH1' . s:highlightBold
 
 hi ColorColumn      cterm=NONE      ctermfg=NONE        ctermbg=235
 hi CursorLine       cterm=bold      ctermfg=NONE        ctermbg=NONE
@@ -64,24 +74,24 @@ hi DiffDelete       cterm=NONE      ctermfg=251         ctermbg=174
 hi diffRemoved      cterm=NONE      ctermfg=131         ctermbg=NONE
 hi DiffText         cterm=bold      ctermfg=251         ctermbg=240
 
-hi Directory        cterm=NONE      ctermfg=244         ctermbg=NONE
+execute 'hi Directory cterm=NONE ctermfg=' . s:dim1_color . ' ctermbg=NONE'
 
-hi Error            cterm=bold      ctermfg=210         ctermbg=NONE
-hi ErrorMsg         cterm=NONE      ctermfg=210         ctermbg=NONE
-hi CocErrorSign     cterm=NONE      ctermfg=210         ctermbg=NONE
+execute 'hi Error cterm=bold ctermfg=' . s:error_color . ' ctermbg=NONE'
+execute 'hi ErrorMsg cterm=NONE ctermfg=' . s:error_color . ' ctermbg=NONE'
+execute 'hi CocErrorSign cterm=NONE ctermfg=' . s:error_color ' ctermbg=NONE'
 
-hi WarningMsg       cterm=NONE      ctermfg=186         ctermbg=NONE
-hi CocWarningSign   cterm=NONE      ctermfg=186         ctermbg=NONE
+execute 'hi WarningMsg cterm=NONE ctermfg=' . s:warning_color . ' ctermbg=NONE'
+execute 'hi CocWarningSign cterm=NONE ctermfg=' . s:warning_color . ' ctermbg=NONE'
 
-hi InfoMsg          cterm=NONE      ctermfg=66          ctermbg=NONE
-hi MoreMsg          cterm=NONE      ctermfg=66          ctermbg=NONE
-hi Question         cterm=NONE      ctermfg=66          ctermbg=NONE
-hi CocInfoSign      cterm=NONE      ctermfg=66         ctermbg=NONE
-hi ModeMsg          cterm=NONE      ctermfg=66         ctermbg=NONE
-hi CocHintSign      cterm=NONE      ctermfg=66         ctermbg=NONE
+execute 'hi InfoMsg' . s:highlightNormal
+execute 'hi MoreMsg' . s:highlightNormal
+execute 'hi Question' . s:highlightNormal
+execute 'hi CocInfoSign' . s:highlightNormal
+execute 'hi ModeMsg' . s:highlightNormal
+execute 'hi CocHintSign' . s:highlightNormal
 
-hi FoldColumn       cterm=NONE      ctermfg=243         ctermbg=NONE
-hi Folded           cterm=NONE      ctermfg=243         ctermbg=NONE
+execute 'hi FoldColumn cterm=NONE ctermfg=' . s:dim2_color . ' ctermbg=NONE'
+execute 'hi Folded cterm=NONE ctermfg=' . s:dim2_color . ' ctermbg=NONE'
 
 hi VertSplit        cterm=NONE      ctermfg=243         ctermbg=235
 hi LineNr           cterm=NONE      ctermfg=243         ctermbg=235
@@ -90,17 +100,17 @@ hi SignColumn       cterm=NONE      ctermfg=247         ctermbg=235
 hi IncSearch        cterm=NONE      ctermfg=234         ctermbg=248
 hi Macro            cterm=NONE      ctermfg=66          ctermbg=NONE
 hi Pmenu            cterm=NONE      ctermfg=251         ctermbg=237
-hi PmenuSel         cterm=NONE      ctermfg=234         ctermbg=66
+execute 'hi PmenuSel cterm=NONE ctermfg=234 ctermbg=' . s:trait_color
 hi PmenuSbar        cterm=NONE      ctermfg=251         ctermbg=235
 hi PmenuThumb       cterm=NONE      ctermfg=250         ctermbg=238
-hi Search           cterm=NONE      ctermfg=234         ctermbg=66
+execute 'hi Search cterm=NONE ctermfg=234 ctermbg=' . s:trait_color
 hi SpellBad         cterm=NONE      ctermfg=203         ctermbg=NONE
 hi SpellLocal       cterm=NONE      ctermfg=229         ctermbg=NONE
 hi SpellRare        cterm=NONE      ctermfg=245         ctermbg=NONE
 hi Underlined       cterm=underline ctermfg=NONE        ctermbg=NONE
 hi Visual           cterm=NONE      ctermfg=249         ctermbg=239
 
-hi Todo             cterm=italic    ctermfg=251         ctermbg=NONE
+execute 'hi Todo cterm=italic ctermfg=' . s:strong_color . ' ctermbg=NONE'
 
-hi CocHighlightText cterm=NONE      ctermfg=247         ctermbg=238
-hi NERDTreeExecFile cterm=NONE      ctermfg=247         ctermbg=NONE
+execute 'hi CocHighlightText cterm=NONE ctermfg=' . s:normal_color . ' ctermbg=238'
+execute 'hi NERDTreeExecFile cterm=NONE ctermfg=' . s:normal_color . ' ctermbg=NONE'
