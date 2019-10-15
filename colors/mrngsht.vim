@@ -66,13 +66,13 @@ hi ColorColumn      cterm=NONE      ctermfg=NONE        ctermbg=235
 hi CursorLine       cterm=bold      ctermfg=NONE        ctermbg=NONE
 hi CursorLineNr     cterm=NONE      ctermfg=234         ctermbg=66
 
-hi DiffAdd          cterm=NONE      ctermfg=251         ctermbg=65
+hi DiffAdd          cterm=NONE      ctermfg=234         ctermbg=108
 hi diffAdded        cterm=NONE      ctermfg=108          ctermbg=NONE
 hi DiffChange       cterm=NONE      ctermfg=251         ctermbg=NONE
 hi diffChanged      cterm=NONE      ctermfg=251         ctermbg=NONE
-hi DiffDelete       cterm=NONE      ctermfg=251         ctermbg=174
+hi DiffDelete       cterm=NONE      ctermfg=234         ctermbg=131
 hi diffRemoved      cterm=NONE      ctermfg=131         ctermbg=NONE
-hi DiffText         cterm=bold      ctermfg=251         ctermbg=240
+hi DiffText         cterm=bold      ctermfg=234         ctermbg=186
 
 execute 'hi Directory cterm=NONE ctermfg=' . s:dim1_color . ' ctermbg=NONE'
 
