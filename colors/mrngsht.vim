@@ -52,8 +52,19 @@ execute 'hi SpecialComment' . s:dim
 execute 'hi Comment' . s:dim
 execute 'hi Cursor' . s:dim
 execute 'hi NonText' . s:dim
-execute 'hi LspHintVirtual' . s:dim
-execute 'hi LspInformationVirtual' . s:dim
+
+hi LspErrorHighlight cterm=underline ctermfg=NONE ctermbg=none
+hi LspWarningHighlight cterm=underline ctermfg=NONE ctermbg=none
+hi LspHintHighlight cterm=underline ctermfg=NONE ctermbg=none
+hi LspInformationHighlight cterm=underline ctermfg=NONE ctermbg=none
+execute 'hi LspErrorVirtual cterm=NONE ctermfg=' . s:error_color . ' ctermbg=NONE'
+execute 'hi LspErrorText cterm=NONE ctermfg=' . s:error_color . ' ctermbg=NONE'
+execute 'hi LspWarningVirtual cterm=NONE ctermfg=' . s:warning_color . ' ctermbg=NONE'
+execute 'hi LspWarningText cterm=NONE ctermfg=' . s:warning_color . ' ctermbg=NONE'
+execute 'hi LspInformationVirtual cterm=NONE ctermfg=' . s:dim3_color . ' ctermbg=NONE'
+execute 'hi LspInformationText cterm=NONE ctermfg=' . s:dim3_color . ' ctermbg=NONE'
+execute 'hi LspHintVirtual cterm=NONE ctermfg=' . s:dim3_color . ' ctermbg=NONE'
+execute 'hi LspHintText cterm=NONE ctermfg=' . s:dim3_color . ' ctermbg=NONE'
 
 execute 'hi Function' . s:highlightNormal
 execute 'hi TypeDef' . s:highlightNormal
