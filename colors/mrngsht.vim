@@ -52,6 +52,8 @@ execute 'hi SpecialComment' . s:dim
 execute 'hi Comment' . s:dim
 execute 'hi Cursor' . s:dim
 execute 'hi NonText' . s:dim
+execute 'hi LspHintText' . s:dim
+execute 'hi LspInformationText' . s:dim
 
 execute 'hi Function' . s:highlightNormal
 execute 'hi TypeDef' . s:highlightNormal
