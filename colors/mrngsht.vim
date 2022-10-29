@@ -9,6 +9,7 @@ let g:colors_name="mrngsht"
 
 let s:trait_color=66
 
+
 let s:strong_color=251
 let s:normal_color=247
 let s:dim1_color=244
@@ -17,6 +18,8 @@ let s:dim3_color=242
 
 let s:error_color=210
 let s:warning_color=186
+
+let s:error_guicolor=#fb7b7b
 
 let s:literal=' cterm=italic ctermfg=' . s:dim1_color . ' ctermbg=NONE'
 let s:keyword=' cterm=bold ctermfg=' . s:normal_color . ' ctermbg=NONE'
@@ -65,6 +68,8 @@ execute 'hi LspInformationVirtual cterm=NONE ctermfg=' . s:dim3_color . ' ctermb
 execute 'hi LspInformationText cterm=NONE ctermfg=' . s:dim3_color . ' ctermbg=NONE'
 execute 'hi LspHintVirtual cterm=NONE ctermfg=' . s:dim3_color . ' ctermbg=NONE'
 execute 'hi LspHintText cterm=NONE ctermfg=' . s:dim3_color . ' ctermbg=NONE'
+
+execute 'hi DiagnosticUnderlineError cterm=undercurl gui=undercurl guisp=' . s:error_guicolor
 
 execute 'hi Function' . s:highlightNormal
 execute 'hi TypeDef' . s:highlightNormal
