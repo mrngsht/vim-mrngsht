@@ -19,7 +19,7 @@ let s:dim3_color=242
 let s:error_color=210
 let s:warning_color=186
 
-let s:error_guicolor=#fb7b7b
+let s:error_guicolor="#fb7b7b"
 
 let s:literal=' cterm=italic ctermfg=' . s:dim1_color . ' ctermbg=NONE'
 let s:keyword=' cterm=bold ctermfg=' . s:normal_color . ' ctermbg=NONE'
