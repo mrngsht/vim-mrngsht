@@ -1,5 +1,5 @@
-set background=dark
-hi clear
+" set background=dark
+" hi clear
 
 if exists("syntax_on")
   syntax reset
@@ -7,26 +7,42 @@ endif
 
 let g:colors_name="mrngsht"
 
-let s:trait_color=66
+if &background == "dark" 
+  let s:bg=0
 
+  let s:trait_color=66
+  let s:strong_color=251
+  let s:normal_color=247
+  let s:dim1_color=244
+  let s:dim2_color=243
+  let s:dim3_color=242
 
-let s:strong_color=251
-let s:normal_color=247
-let s:dim1_color=244
-let s:dim2_color=243
-let s:dim3_color=242
+  let s:error_color=210
+  let s:warning_color=186
 
-let s:error_color=210
-let s:warning_color=186
+  let s:error_guicolor="#fb7b7b"
+else
+  let s:bg=231
 
-let s:error_guicolor="#fb7b7b"
+  let s:trait_color=23
+  let s:strong_color=0
+  let s:normal_color=233
+  let s:dim1_color=238
+  let s:dim2_color=239
+  let s:dim3_color=240
 
-let s:literal=' cterm=italic ctermfg=' . s:dim1_color . ' ctermbg=NONE'
-let s:keyword=' cterm=bold ctermfg=' . s:normal_color . ' ctermbg=NONE'
-let s:normal=' cterm=NONE ctermfg=' . s:normal_color . ' ctermbg=NONE'
-let s:dim=' cterm=NONE ctermfg=' . s:dim3_color . ' ctermbg=NONE'
-let s:highlightNormal=' cterm=NONE ctermfg=' . s:trait_color . ' ctermbg=NONE'
-let s:highlightBold=' cterm=NONE ctermfg=' . s:trait_color . ' ctermbg=NONE'
+  let s:error_color=210
+  let s:warning_color=186
+
+  let s:error_guicolor="#fb7b7b"
+endif
+
+let s:literal=' cterm=italic ctermfg=' . s:dim1_color . ' ctermbg='.s:bg
+let s:keyword=' cterm=bold ctermfg=' . s:normal_color . ' ctermbg='.s:bg
+let s:normal=' cterm=NONE ctermfg=' . s:normal_color . ' ctermbg='.s:bg
+let s:dim=' cterm=NONE ctermfg=' . s:dim3_color . ' ctermbg='.s:bg
+let s:highlightNormal=' cterm=NONE ctermfg=' . s:trait_color . ' ctermbg='.s:bg
+let s:highlightBold=' cterm=NONE ctermfg=' . s:trait_color . ' ctermbg='.s:bg
 
 execute 'hi Boolean' . s:literal
 execute 'hi Character' . s:literal
