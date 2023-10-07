@@ -21,7 +21,7 @@ let s:warning_color=186
 
 let s:error_guicolor="#fb7b7b"
 
-let s:literal=' cterm=italic ctermfg=' . s:dim1_color . ' ctermbg=NONE'
+let s:literal=' ctermfg=' . s:dim1_color . ' ctermbg=NONE'
 let s:keyword=' cterm=bold ctermfg=' . s:normal_color . ' ctermbg=NONE'
 let s:normal=' cterm=NONE ctermfg=' . s:normal_color . ' ctermbg=NONE'
 let s:dim=' cterm=NONE ctermfg=' . s:dim3_color . ' ctermbg=NONE'
