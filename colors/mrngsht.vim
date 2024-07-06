@@ -118,6 +118,7 @@ hi SignColumn       cterm=NONE      ctermfg=247         ctermbg=235
 hi IncSearch        cterm=NONE      ctermfg=234         ctermbg=248
 hi Macro            cterm=NONE      ctermfg=66          ctermbg=NONE
 hi Pmenu            cterm=NONE      ctermfg=251         ctermbg=237
+hi NormalFloat      cterm=NONE      ctermfg=251         ctermbg=236
 execute 'hi PmenuSel cterm=NONE ctermfg=234 ctermbg=' . s:trait_color
 hi PmenuSbar        cterm=NONE      ctermfg=251         ctermbg=235
 hi PmenuThumb       cterm=NONE      ctermfg=250         ctermbg=238
