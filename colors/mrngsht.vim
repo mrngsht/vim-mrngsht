@@ -133,3 +133,10 @@ execute 'hi Todo cterm=italic ctermfg=' . s:strong_color . ' ctermbg=NONE'
 
 execute 'hi CocHighlightText cterm=NONE ctermfg=' . s:normal_color . ' ctermbg=238'
 execute 'hi NERDTreeExecFile cterm=NONE ctermfg=' . s:normal_color . ' ctermbg=NONE'
+
+" TabLine     tab pages line, not active tab page label
+" TabLineFill tab pages line, where there are no labels
+" TabLineSel  tab pages line, active tab page label
+hi TabLine          cterm=NONE      ctermfg=251         ctermbg=240
+hi TabLineFill      cterm=NONE      ctermfg=251         ctermbg=NONE
+hi TabLineSel       cterm=NONE      ctermfg=251         ctermbg=NONE
