@@ -140,3 +140,5 @@ execute 'hi NERDTreeExecFile cterm=NONE ctermfg=' . s:normal_color . ' ctermbg=N
 hi TabLine          cterm=NONE      ctermfg=251         ctermbg=238
 hi TabLineFill      cterm=NONE      ctermfg=251         ctermbg=240
 hi TabLineSel       cterm=NONE      ctermfg=251         ctermbg=NONE
+
+execute 'hi QuickFixLine' . s:highlightNormal
